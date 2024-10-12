@@ -1,0 +1,22 @@
+[package]
+name = "counterspell"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { git = "https://github.com/DioxusLabs/dioxus", features = ["web", "router"] }
+dioxus-logger = { git = "https://github.com/DogeDark/dioxus-logger" }
+reqwest = "0.11.25"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+snafu = "0.8.5"
+
+web-sys = { version = "0.3.72", features = ["MediaDevices", "MediaStreamConstraints", "Navigator", "Window", "HtmlVideoElement", "MediaStream", "CanvasRenderingContext2d", "HtmlCanvasElement", "ImageData", "Element", "DomRect"] }
+wasm-bindgen-futures = "0.4.45"
+gloo-timers = { version = "0.3.0", features = ["futures"] }
+bardecoder = "0.5.0"
+image = "0.25.2"
+rqrr = "0.8.0"
+base64 = "0.22.1"
